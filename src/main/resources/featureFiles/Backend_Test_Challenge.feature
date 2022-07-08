@@ -27,8 +27,21 @@ Feature: Verify All User Operations
     Then I verify the email format with regular exp "^(.+)@(.+)$"
 
   Scenario: Search for the post by postId
-  Scenario: Search for the comment by postId
+    Given I perform get with url "/posts" for /22 pathParams with jsonfile path noBodyNeeded
+    When I verify response with status code 200
+
   Scenario: Verify the post method for posts
+    Given I perform post with url "/posts" for 22 pathParams with jsonfile path src/main/resources/requestJSON/sampleRequest.json
+    When I verify response with status code 201
+
   Scenario: Verify the put method for posts
+    Given I perform put with url "/posts" for /22 pathParams with jsonfile path src/main/resources/requestJSON/sampleRequest.json
+    When I verify response with status code 200
+
   Scenario: Verify the patch method for posts
+    Given I perform patch with url "/posts" for /22 pathParams with jsonfile path src/main/resources/requestJSON/samplePatchRequest.json
+    When I verify response with status code 200
+
   Scenario: Verify the delete method for posts
+    Given I perform delete with url "/posts" for /22 pathParams with jsonfile path noBodyNeeded
+    When I verify response with status code 200
