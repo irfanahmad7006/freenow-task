@@ -1,8 +1,5 @@
 package com.typicode.jsonplaceholder.qaUtils;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,6 +9,4 @@ public class Utils {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
-
-
 }
