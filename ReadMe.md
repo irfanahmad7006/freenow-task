@@ -61,8 +61,8 @@ Execution from IDE
 
 Reporting
 ----------------- 
-* You can view the test execution report from `testReport/cucumber.html`
-* You can view detailed test execution report from `testReport/Spark.html`
+* You can view the test execution report from `target/reports/cucumber.html`
+* You can view detailed test execution report from `target/reports/Spark.html`
 * You can also view the cucumber cloud report (only available for 24 hours) from the console, after every execution. This can be managed from cucumber options.
 
 
