@@ -49,7 +49,7 @@ Writing a test
 
 Execution from CMD
 -----------------
-* git clone https://github.com/irfanahmad7006/swagger-petstore.git
+* git clone https://github.com/irfanahmad7006/freenow-task.git
 * cd freenow-task
 * Run `mvn clean test` in cmd prompt for execution.
 
